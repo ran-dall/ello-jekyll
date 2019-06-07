@@ -1,0 +1,125 @@
+# Your name
+name: Randall
+#Your GitHub profile picture
+avatar: ran-dall size=120
+# Your Contact Details
+contact:
+  - profile: General Sorcery
+    network: headmaster
+    user-id: HEADMASTER @ Medium
+    link: https://medium.com/sorcery
+    icon: <i class="fas fa-hat-wizard"></i>
+
+  - profile: General Email
+    network: headmaster
+    user-id: randall@headmaster.io
+    link: mailto:randall@headmaster.io
+    icon: <i class="fas fa-envelope"></i>
+
+  - profile: G Suite
+    network: google
+    user-id: randall@headmaster.io
+    link: mailto:randall@headmaster.io
+    icon: <i class="fab fa-google"></i>
+
+  - profile: Laborings
+    network: work
+    user-id: Conjured
+    link: https://conjured.io
+    icon: <i class="fas fa-dragon"></i>
+
+  - profile: Work Email
+    network: work
+    user-id: randall@conjured.io
+    link: mailto:randall@conjured.io
+    icon: <i class="fas fa-envelope-open"></i>
+
+  - profile: G Suite
+    network: google
+    user-id: randall@conjured.io
+    link: mailto:randall@conjured.io
+    icon: <i class="fab fa-google"></i>
+
+  - profile: Personal Email
+    network: email
+    user-id: ran.dall@icloud.com
+    link: mailto:ran.dall@icloud.com
+    icon: <i class="fas fa-at"></i>
+
+  - profile: Google
+    network: google
+    user-id: ran.dall@icloud.com
+    link: mailto:ran.dall@icloud.com
+    icon: <i class="fab fa-google"></i>
+
+  - profile: Secure Email
+    network: s-email
+    user-id: randall@criptext.com
+    link: mailto:randall@criptext.com
+    icon: <i class="fas fa-lock"></i>
+
+  - profile: Medium
+    network: medium
+    user-id: ran.dall
+    link: https://medium.com/@ran.dall
+    icon: <i class="fab fa-medium-m"></i>
+
+  - profile: Github
+    network: github
+    user-id: ran-dall
+    link: http://github.com/ran-dall
+    icon: <i class="fab fa-github-alt"></i>
+
+  - profile: Gitlab
+    network: gitlab
+    user-id: .randall
+    link: http://gitlab.com/.randall
+    icon: <i class="fab fa-gitlab"></i>
+
+  - profile: Bitbucket
+    network: bitbucket
+    user-id: ran-dall
+    link: https://bitbucket.org/ran-dall/
+    icon: <i class="fab fa-bitbucket"></i>
+
+  - profile: Keybase
+    network: keybase
+    user-id: randall_
+    link: https://keybase.io/randall_
+    icon: <i class="fab fa-keybase"></i>
+
+  - profile: RubyGems
+    network: rubygems
+    user-id: randall
+    link: https://rubygems.org/profiles/randall
+    icon: <i class="fas fa-gem"></i>
+
+  - profile: Dribbble
+    network: dribbble
+    user-id: _randall
+    link: https://dribbble.com/_randall
+    icon: <i class="fab fa-dribbble"></i>
+
+  - profile: Behance
+    network: behance
+    user-id: ran-dall
+    link: https://www.behance.net/ran-dall
+    icon: <i class="fab fa-behance"></i>
+
+  - profile: Telegram
+    network: telegram
+    user-id: r_andall
+    link: https://t.me/r_andall
+    icon: <i class="fab fa-telegram-plane"></i>
+
+  - profile: Angellist
+    network: angellist
+    user-id: _randall
+    link: https://angel.co/_randall
+    icon: <i class="fab fa-angellist"></i>
+
+  - profile: LinkedIn
+    network: linkedin
+    user-id: Randall T. Vasquez
+    link: https://www.linkedin.com/in/randall-t-vasquez-627bb755/
+    icon: <i class="fab fa-linkedin"></i>
