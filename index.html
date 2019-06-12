@@ -3,46 +3,75 @@ title: Home
 layout: default
 ---
 <div class="contact-area">
-  <div class="contact">
-    <main>
-      <section>
-        <div class="content">
-          {% avatar {{ site.data.details.avatar }} %}
-
-          <aside>
-            <h1>{{ site.data.main.hi }} {{ site.data.details.name }}</h1>
-            <p>{{ site.data.main.message }}</p>
-          </aside>
-
-          <button>
-            <span>{{ site.data.main.cta-button }}</span>
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path> </g> </svg>
-          </button>
-        </div>
-
-        <div class="title"><p>{{ site.data.main.cta-title }}</p></div>
-      </section>
-
-
-    </main>
-
-    <nav>
-      <div class="scroll"><h3><i class="fas fa-level-down-alt fa-flip-horizontal"></i>Scroll<i class="fas fa-level-down-alt"></i></h3></div>
-      {% for contact in site.data.details.contact %}
-        <a href="{{ contact.link }}" class="{{ contact.network }}">
-          <div class="icon">
-            {{ contact.icon }}
-          </div>
-
-          <div class="content">
-            <h1>{{ contact.profile }}</h1>
-            <span>{{ contact.user-id }}</span>
-          </div>
-
-          <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"> <g class="nc-icon-wrapper" fill="#444444"> <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path> </g> </svg>
-        </a>
-      {% endfor %}
-    </nav>
-  </div>
+    <div class="contact h-card">
+        <main>
+            <section>
+                <div class="content">
+                    {% avatar {{ site.data.details.avatar }} %}
+                    {% if site.data.details.u-photo %}
+                    <img class="u-photo" src="{{ site.data.details.u-photo }}" style="display: none;">
+                    {% endif %}
+                    <aside>
+                      <h1><a class="u-url u-uid nolink" href="{{ site.url }}{{ site.baseurl }}" target="blank">{{ site.data.main.hi }} <span class="p-name">{{ site.data.details.name }}</span></a></h1>
+                      <p class="p-note">{{ site.data.main.message }}</p>
+                    </aside>
+                    <button>
+                        <span>{{ site.data.main.cta-button }}</span>
+                        <svg height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                            <g class="nc-icon-wrapper" fill="#444444">
+                              <path d="M14.83 30.83L24 21.66l9.17 9.17L36 28 24 16 12 28z"></path>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <div class="top-title">
+                    <p>{{ site.data.main.cta-title }}</p>
+                </div>
+            </section>
+        </main>
+        <nav>
+            <div class="scroll">
+                <h3>
+                    <i class="fas fa-level-down-alt fa-flip-horizontal"></i>
+                    Scroll
+                    <i class="fas fa-level-down-alt"></i>
+                </h3>
+            </div>
+            {% for contact in site.data.details.contact %}
+            <a class="{{ contact.network }}{% if contact.h-card.class %} {{ contact.h-card.class }}{% endif %}" href="{{ contact.link }}"{% if contact.h-card.rel %} rel="{{ contact.h-card.rel }}"{% endif %}>
+                <div class="icon">
+                  {{ contact.icon }}
+                </div>
+                <div class="content">
+                  <h1>{{ contact.profile }}</h1>
+                  <span{% if contact.h-card.secondary-class %} class="{{ contact.h-card.secondary-class }}"{% endif %}>{{ contact.user-id }}</span>
+                </div>
+                <svg class="arrow" height="48" viewbox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg">
+                    <g class="nc-icon-wrapper" fill="#444444">
+                        <path d="M17.17 32.92l9.17-9.17-9.17-9.17L20 11.75l12 12-12 12z"></path>
+                    </g>
+                </svg>
+            </a>
+            {% endfor %}
+        </nav>
+        <!-- Hidden Data -->
+        <data style="display: none;">
+          <data id="age" value="29"></data>
+          <time class="dt-bday" datetime="1990-01-18"></time>
+          <data class="p-gender-identity"><span class="p-sex">M</span></data>
+          <data class="p-language" value="en_US"></data>
+          <data class="p-language" value="en_GB"></data>
+          <data class="p-language" value="en_PI"></data>
+          <data class="p-language" value="es_LA"></data>
+          <data class="p-language" value="es_CL"></data>
+          <data class="p-language" value="es_CO"></data>
+          <data class="p-language" value="es_ES"></data>
+          <data class="p-language" value="es_MX"></data>
+          <data class="p-language" value="es_VE"></data>
+          <data class="p-language" value="fb_LT"></data>
+          <data class="p-relationship-status">Married</data>
+          <data class="p-interested-in">Women</data>
+          <data class="p-dietary-preference">Ask my wife</data>
+        </data>
+    </div>
 </div>
