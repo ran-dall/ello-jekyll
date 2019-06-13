@@ -60,24 +60,6 @@ layout: default
             </a>
             {% endfor %}
         </nav>
-        <!-- Hidden Data -->
-        <data style="display: none;">
-          <data id="age" value="29"></data>
-          <time class="dt-bday" datetime="1990-01-18"></time>
-          <data class="p-gender-identity"><span class="p-sex">M</span></data>
-          <data class="p-language" value="en_US"></data>
-          <data class="p-language" value="en_GB"></data>
-          <data class="p-language" value="en_PI"></data>
-          <data class="p-language" value="es_LA"></data>
-          <data class="p-language" value="es_CL"></data>
-          <data class="p-language" value="es_CO"></data>
-          <data class="p-language" value="es_ES"></data>
-          <data class="p-language" value="es_MX"></data>
-          <data class="p-language" value="es_VE"></data>
-          <data class="p-language" value="fb_LT"></data>
-          <data class="p-relationship-status">Married</data>
-          <data class="p-interested-in">Women</data>
-          <data class="p-dietary-preference">Ask my wife</data>
-        </data>
+        {%- include hidden.html -%}
     </div>
 </div>

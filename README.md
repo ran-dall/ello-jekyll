@@ -6,6 +6,10 @@ Utilizing this theme you can create a simple vCard-style web site with embedded 
 
 ---
 
+Both the CSS and JS have been [cache-busted](https://ultimatecourses.com/blog/cache-busting-jekyll-github-pages).
+
+---
+
 ###### Base Theme Demo: https://ran-dall.github.io/ello-jekyll/
 
 ###### RubyGems page: https://rubygems.org/gems/ello-jekyll-vcard-theme
@@ -86,6 +90,8 @@ The `details.yaml` file, has an assigned `h-card` area embedded with the specifi
 	- An experimental idea to implement Social Media Network names into `h-card`
 - http://xmlns.com/foaf/spec/
 	- The `FOAF` web page 
+- http://microformats.org/wiki/xfn-to-foaf
+    - Information on XFN to FOAF
 
 ---
 
@@ -115,12 +121,15 @@ If you wish to display a Favicon, you may do so by simply adding a `.png` image 
     - `h-card`
     	- `class` - a `h-card` formatted class
     	- `secondary-class` -  a `h-card` formatted secondary class or value
-    	- `rel` - can be used to add XFN `rel` attributes 
+    	- `rel` - can be used to add XFN `rel` attributes
+
+#### `includes/hidden.html`
+**It's important to note that Google strongly discourages hidden data**, but in case you do want to embed some extra info; you may do so by adding it to the `includes/hidden.html` file. You can see the example file that's included in this repo for a working example.
 
 #### Note about STYLES
 Currently **ONLY** the following Networks are supported (#HEX included):
 
-* email: `#A3AAAE` - `iCloud's color`
+* icloud: `#A3AAAE` - `iCloud's color`
 * s(ecure)-email: `#0091FF` - `Criptext's color`
 * headmaster: `#ff5555` - `Headmaster's Color (...my Medium publication)`
 * work: `#bd93f9` - `Conjured's Color (...where I work)`
