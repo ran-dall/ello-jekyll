@@ -14,6 +14,12 @@ layout: default
                     <aside>
                       <h1><a class="u-url u-uid nolink" href="{{ site.url }}{{ site.baseurl }}" target="blank">{{ site.data.main.hi }} <span class="p-name">{{ site.data.details.name }}</span></a></h1>
                       <p class="p-note">{{ site.data.main.message }}</p>
+                      {% if site.data.main.gpg %}
+                      <br>
+                      <hr>
+                      <br>
+                      <p>🔑 GPG: <span class="gpg">{{ site.data.main.gpg }}</span></p>
+                      {% endif %}
                     </aside>
                     <button>
                         <span>{{ site.data.main.cta-button }}</span>
