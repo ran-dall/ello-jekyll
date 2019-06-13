@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "ello-jekyll-vcard-theme"
-  spec.version       = "0.0.1.2"
+  spec.version       = "0.0.1.3"
   spec.authors       = ["Randall"]
   spec.email	     = 'ran.dall@icloud.com'
 
-  spec.summary       = "Ello is a simple animated Jekyll vCard theme by Randall, optimized for use with GitHub Pages (but can be used wherever Jekyll can live)."
+  spec.summary       = "Ello is a simple animated Jekyll vCard style theme by Randall, optimized for use with GitHub Pages (but can be used wherever)."
   spec.homepage      = "https://github.com/ran-dall/ello-jekyll"
   spec.license       = "MIT"
 
