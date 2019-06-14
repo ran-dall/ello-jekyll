@@ -19,11 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: ELLO 👋 Jeykll
-email: your-email@example.com
+email: ran.dall@icloud.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  👋 Ello is a simple animated Jekyll vCard-style theme by @ran-dall, 👉 optimized for use with GitHub Pages (but can be used anywhere ✌️).
 baseurl: "/ello-jekyll" # the subpath of your site, e.g. /blog
 url: "https://ran-dall.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
@@ -36,6 +34,7 @@ google_analytics:
 
 sass:
   style: compact # possible values: nested expanded compact compressed
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
