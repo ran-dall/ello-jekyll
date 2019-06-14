@@ -2,11 +2,7 @@
 
 Ello is a simple animated Jekyll vCard-style theme by [Randall](https://ran-dall.github.io), optimized for use with GitHub Pages (but can be used wherever Jekyll can be installed).
 
-Utilizing this theme you can create a simple vCard-style web site with embedded `h-card` and `Schema` data; which can then serve as a centralized location with all your contact data. 
-
----
-
-Both the CSS and JS have been [cache-busted](https://ultimatecourses.com/blog/cache-busting-jekyll-github-pages).
+Utilizing this theme you can create a simple vCard-style web site with embedded `h-card` and `Schema` data; which can then serve as a centralized location with all your contact data.
 
 ---
 
@@ -15,7 +11,7 @@ Both the CSS and JS have been [cache-busted](https://ultimatecourses.com/blog/ca
 ###### RubyGems page: https://rubygems.org/gems/ello-jekyll-vcard-theme
 
 > You can also look my personal GitHub Pages site, which uses this theme but has several modifications.
-> 
+>
 > ###### My GitHub Pages site: https://ran-dall.github.io/
 > ###### My GitHub Pages site repo: https://github.com/ran-dall/ran-dall.github.io
 
@@ -46,13 +42,17 @@ Or install it yourself as:
 
 ### TL;DR
 
-Use `main.yaml` to update the information on the `contact-box` area with whatever you wish to display. 
+Use `main.yaml` to update the information on the `contact-box` area with whatever you wish to display.
 
 Use `details.yaml` to list all the profiles you want to link to from your site. Currently, there can be up to 24 contact links; but it's something you can modify [on **line 216**](https://github.com/ran-dall/ello-jekyll/blob/42535e1874e0d0987e0926b241d9bb91525464d3/_sass/componets/contact-box.scss#L216).
 
 ---
 
 If you install this theme as a `remote-theme` for GitHub Pages or  as a gem (GitHub Pages or not), you'll be required to make your own `index.html`, `_data/main.yaml`, and `data/details.yaml` files. You can use the files included in this repository (which initially came from my [GitHub Pages site](https://ran-dall.github.io)) as a working example of what's required.
+
+###### [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag)
+
+If you would like to use the Jekyll SEO tag to add relevant `JSON-LD` data; you must add [the required `{% seo %}` in the header](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/installation.md).
 
 ###### GitHub Pages
 
@@ -64,7 +64,7 @@ If you plan on using this theme on GitHub Pages, it is prefered you use is as a 
 
 The `h-card` Mircoformat2 format is a simple specification which updates the `hcard` Microformat specification, [which focused on bringing `vCards` to the web.](https://hcardcreator.com/articles/what-hcard-vcard-microformats) Aside from publishing information about a person, [when combined with `XFN`](http://microformats.org/wiki/xfn-to-foaf), `h-card` has some of the basic functionality required to declare relationships to achieve [social-network-portability](http://microformats.org/wiki/hcard-supporting-user-profiles).
 
-The `details.yaml` file, has an assigned `h-card` area embedded with the specific `h-card` options in each `contact` entry. 
+The `details.yaml` file, has an assigned `h-card` area embedded with the specific `h-card` options in each `contact` entry.
 
 ##### Specification Details:
 
@@ -81,7 +81,7 @@ The `details.yaml` file, has an assigned `h-card` area embedded with the specifi
 ##### Extra Resources:
 
 - http://microformats.org/wiki/microformats2
-	- The `microformats2` web page 
+	- The `microformats2` web page
 - https://developer.mozilla.org/en-US/docs/Web/HTML/microformats
 	- Mozilla's knowledge base article describing microformats
 - http://microformats.org/wiki/hcard-supporting-user-profiles
@@ -89,7 +89,7 @@ The `details.yaml` file, has an assigned `h-card` area embedded with the specifi
 - https://stackoverflow.com/questions/25840618/social-media-profiles-in-h-card-html-microformats
 	- An experimental idea to implement Social Media Network names into `h-card`
 - http://xmlns.com/foaf/spec/
-	- The `FOAF` web page 
+	- The `FOAF` web page
 - http://microformats.org/wiki/xfn-to-foaf
     - Information on XFN to FOAF
 
@@ -173,10 +173,12 @@ Your theme is setup just like a normal Jekyll site! To test your theme, run `bun
 When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
 To add a custom directory to your theme-gem, please edit the regexp in `vcard.gemspec` accordingly.
 
+
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+The theme is available as open source under the terms of the [Mozilla Public License 2.0](https://spdx.org/licenses/MPL-2.0.html).
 
 ---
+---
 
-This theme was based on an original [Dribbble](https://dribbble.com/shots/2723297-Contact-Me-UI-Animation) by [Riccardo Cavallo](https://dribbble.com/richox) and a [CodePen](https://codepen.io/BeanBaag/pen/dzyGpM) by [Aaron Taylor](https://twitter.com/beanbaag).
+###### This theme was based on an original [Dribbble](https://dribbble.com/shots/2723297-Contact-Me-UI-Animation) by [Riccardo Cavallo](https://dribbble.com/richox) and a [CodePen](https://codepen.io/BeanBaag/pen/dzyGpM) by [Aaron Taylor](https://twitter.com/beanbaag).

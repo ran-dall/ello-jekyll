@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Randall"]
   spec.email	     = 'ran.dall@icloud.com'
 
-  spec.summary       = "Ello is a simple animated Jekyll vCard style theme by Randall, optimized for use with GitHub Pages (but can be used wherever)."
+  spec.summary       = "Ello is a simple animated Jekyll vCard-style theme by Randall, optimized for use with GitHub Pages (but can be used anywhere)."
   spec.homepage      = "https://github.com/ran-dall/ello-jekyll"
   spec.license       = "MIT"
 
